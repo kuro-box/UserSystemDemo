@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="8c6c2155-777b-4e01-b961-2b57d5c617e3" ChangeDateTime="08/02/2016 08:16:46">
+    <Property Name="ElementName" Value="[dbo].[GroupMenus].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[GroupMenus]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="GroupID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5a4e286c-8572-4ec6-9842-150d9146cf04" ChangeDateTime="08/02/2016 08:16:49">
+    <Property Name="ElementName" Value="[dbo].[GroupMenus].[GroupID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[GroupMenus]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="GroupId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8870c143-0716-410a-8463-f70af67e4e23" ChangeDateTime="08/02/2016 08:19:52">
+    <Property Name="ElementName" Value="[dbo].[FK_GroupMenus_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[GroupMenus]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_GroupMenus_ToGroups]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fa4a3218-468a-4d33-b49b-32eb655dd7d0" ChangeDateTime="08/02/2016 08:21:34">
+    <Property Name="ElementName" Value="[dbo].[GroupActions].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[GroupActions]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="GroupId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ce54aaa0-bb72-4a22-9782-946911d3e38a" ChangeDateTime="08/02/2016 08:24:13">
+    <Property Name="ElementName" Value="[dbo].[GroupUsers].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[GroupUsers]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="GroupId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="35889223-c0a7-4c94-b259-6143be1ce931" ChangeDateTime="08/02/2016 08:24:55">
+    <Property Name="ElementName" Value="[dbo].[FK_GroupUsers_TogROUPS]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[GroupUsers]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_GroupUsers_ToGroups]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8110ab83-e0e6-47bf-93a3-1f96fdedface" ChangeDateTime="08/02/2016 08:25:46">
+    <Property Name="ElementName" Value="[dbo].[FK_GroupUsers_ToGroups]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[GroupUsers]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_GroupUsers_Groups]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f088f1c0-dcc9-4681-a2a0-d4fa544b8806" ChangeDateTime="08/02/2016 08:25:50">
+    <Property Name="ElementName" Value="[dbo].[FK_GroupUsers_ToUsers]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[GroupUsers]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_GroupUsers_Users]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a4a973b0-31e2-4b51-a75f-61b09176292f" ChangeDateTime="08/02/2016 08:25:59">
+    <Property Name="ElementName" Value="[dbo].[FK_GroupActions_ToGroups]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[GroupActions]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_GroupActions_Groups]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b197455c-fad7-47b1-81d0-d228b8529894" ChangeDateTime="08/02/2016 08:26:06">
+    <Property Name="ElementName" Value="[dbo].[FK_GroupActions_ToActions]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[GroupActions]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_GroupActions_Actions]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3db0c595-c44e-489a-876b-facf3faf85f7" ChangeDateTime="08/02/2016 08:26:17">
+    <Property Name="ElementName" Value="[dbo].[FK_GroupMenus_ToGroups]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[GroupMenus]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_GroupMenus_Groups]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="18d0765d-4d76-4d07-a4cf-9212e1177244" ChangeDateTime="08/02/2016 08:26:22">
+    <Property Name="ElementName" Value="[dbo].[FK_GroupMenus_ToMenus]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[GroupMenus]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_GroupMenus_Menus]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="91a5a135-b3d5-4834-9583-a91d170acb70" ChangeDateTime="08/02/2016 08:28:03">
+    <Property Name="ElementName" Value="[dbo].[UserMessages].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[UserMessages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UserId" />
+  </Operation>
+</Operations>
